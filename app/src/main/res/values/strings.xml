@@ -17,4 +17,8 @@
     <string name="rec_time">Recommended time:</string>
     <string name="food_two">Food 2</string>
     <string name="food_three">Food 3</string>
+    <string name="Food1Option">Food 1</string>
+    <string name="Food2Option">Food 2</string>
+    <string name="Food3Option">Food 3</string>
+    <string name="black_button">Black icon button</string>
 </resources>

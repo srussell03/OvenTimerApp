@@ -24,25 +24,71 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="142dp"
-        tools:layout_editor_absoluteY="147dp" />
+    <ImageButton
+        android:id="@+id/Food1Select"
+        android:layout_width="54dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="51dp"
+        android:contentDescription="@string/black_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Presets"
+        app:srcCompat="@drawable/black_icon" />
+
+    <ImageButton
+        android:id="@+id/Food2Select"
+        android:layout_width="54dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="29dp"
+        android:contentDescription="@string/black_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Food1Select"
+        app:srcCompat="@drawable/black_icon" />
+
+    <ImageButton
+        android:id="@+id/Food3Select"
+        android:layout_width="54dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="31dp"
+        android:contentDescription="@string/black_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Food2Select"
+        app:srcCompat="@drawable/black_icon" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/Food1Option"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="147dp"
+        android:text="@string/Food1Option"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/Food2Option"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/Food2Option"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Food1Option" />
+
+    <TextView
+        android:id="@+id/Food3Option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/Food3Option"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Food2Option" />
 
     <Button
         android:id="@+id/GoToTimer"
