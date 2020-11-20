@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Timer">
+
+    <ImageButton
+        android:id="@+id/IncreaseHrs"
+        android:layout_width="103dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="133dp"
+        android:contentDescription="@string/up_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_up" />
+
+    <ImageButton
+        android:id="@+id/IncreaseMins"
+        android:layout_width="103dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="133dp"
+        android:contentDescription="@string/up_arrow"
+        app:layout_constraintStart_toEndOf="@+id/IncreaseHrs"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_up" />
+
+    <ImageButton
+        android:id="@+id/IncreaseSecs"
+        android:layout_width="103dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="132dp"
+        android:contentDescription="@string/up_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_up" />
+
+    <TextView
+        android:id="@+id/Timer"
+        android:layout_width="334dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="44dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="@string/timer"
+        android:textSize="75sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.405" />
+
+    <ImageButton
+        android:id="@+id/DecreaseHrs"
+        android:layout_width="104dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/down_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Timer"
+        app:srcCompat="@drawable/arrow_down" />
+
+    <ImageButton
+        android:id="@+id/DecreaseMins"
+        android:layout_width="104dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/down_arrow"
+        app:layout_constraintStart_toEndOf="@+id/DecreaseHrs"
+        app:layout_constraintTop_toBottomOf="@+id/Timer"
+        app:srcCompat="@drawable/arrow_down" />
+
+    <ImageButton
+        android:id="@+id/DecreaseSecs"
+        android:layout_width="104dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/down_arrow"
+        app:layout_constraintStart_toEndOf="@+id/DecreaseMins"
+        app:layout_constraintTop_toBottomOf="@+id/Timer"
+        app:srcCompat="@drawable/arrow_down" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/StartTimer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="160dp"
+        android:text="@string/Start"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Timer" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/StopTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="160dp"
+        android:text="@string/stop"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/StartTimer"
+        app:layout_constraintTop_toBottomOf="@+id/Timer" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ResetTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="160dp"
+        android:text="@string/reset"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/StopTimer"
+        app:layout_constraintTop_toBottomOf="@+id/Timer" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">OvenTimerApp</string>
+    <string name="OvenTimer">Oven Timer</string>
+    <string name="Start">Start</string>
+    <string name="flames">Picture of flames</string>
+    <string name="food_presets">Presets</string>
+    <string name="set_timer">Set Timer</string>
+    <string name="corn_dog_preset">Corn Dog</string>
+    <string name="go_to_timer">Go To Timer</string>
+    <string name="timer">00:00:00</string>
+    <string name="stop">Stop</string>
+    <string name="reset">Reset</string>
+    <string name="up_arrow">Arrow facing upward</string>
+    <string name="down_arrow">Arrow facing downward</string>
+    <string name="food_one">Food 1</string>
+    <string name="rec_temp">Recommended temperature:</string>
+    <string name="rec_time">Recommended time:</string>
+    <string name="food_two">Food 2</string>
+    <string name="food_three">Food 3</string>
+</resources>
